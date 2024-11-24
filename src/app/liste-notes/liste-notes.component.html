@@ -1,0 +1,14 @@
+<div>
+    <input
+      type="text"
+      [(ngModel)]="newNote"
+      placeholder="Saisissez une note"
+    />
+    <button (click)="addNote()">Add Note</button>
+    <button (click)="showNotes()">Show Notes</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let note of notes">{{ note }}</li>
+  </ul>
+  
